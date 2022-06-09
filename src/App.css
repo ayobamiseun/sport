@@ -1,0 +1,174 @@
+.table {
+    text-align: center;
+}
+
+.table td, .table th {
+    padding: .25rem;
+}
+
+.table .position {
+    width: 5%;
+}
+
+.table .points, .table .played, .table .won, .table .draw, .table .lost, .table .ga {
+    width: 10%;
+}
+
+.table .badge-td {
+    width: 5%;
+}
+
+.badge{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+}
+  
+.badge img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.btt{
+    height:120px;
+    /* background-color:#fff; */
+    width:350px;
+    border:none;
+    margin:20px;
+    border-radius: 0px;
+background: #fcf8ff;
+box-shadow:  5px 5px 10px #d4d0d6,
+             -5px -5px 10px #ffffff;
+  }
+
+  .bck {
+      height:100vh;
+      background-color:grey;
+      
+  }
+  .ball{
+    margin-top:-100px;
+    width:60%;
+      position:absolute;
+      background-color:#fff;
+      border:20px;
+      border: 0.02rem solid grey;
+      border-radius:3px;
+
+  }
+  .cnt{
+    
+  }
+  .bo{
+    max-width:420px;
+    margin:auto;
+    margin-bottom:20px;
+  }
+  .him{
+      height:170px;
+      width:80%;
+      /* padding-bottom:600px; */
+
+  }
+  .hd{
+    height:300px;
+  }
+  .head{
+      
+    position: relative;
+    min-height: 300px;
+    background-position: 50%;
+    background-size: cover;
+      background-image:url('/bg-football.jpg');
+      background-repeat: no-repeat;
+      /* background-attachment: fixed; */
+      background-size: 100% 100%;
+      background-size: cover;
+  }
+  .logo2 {
+    max-width: 200px;
+  }
+  .logo {
+    max-width: 100%;
+    height: auto;
+}
+  
+  .fhead{
+    padding-top:30px;
+      padding-bottom:20px;
+      /* margin:30px; */
+      font-size:20px;
+  }
+
+  @media screen and (max-width: 680px) {
+    .ball {
+      width:100%;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .btt {
+     margin:0px;
+     width:300px;
+    }
+  }
+
+  .btt:hover{
+    border-radius: 0px;
+    background: #e0e0e0;
+    box-shadow:  9px 9px 18px #949494,
+                 -9px -9px 18px #ffffff;
+  }
+ 
+  .butt {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    /* position: relative; */
+    overflow: hidden;
+    z-index: 1;
+    position:absolute;
+   left:0px;
+   bottom:-70px;
+   /* height:30px; */
+   /* width:100%; */
+   background:#999;
+ }
+  .butt:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0cf;
+    border-radius: 10rem;
+    z-index: -2;
+ }
+  .butt:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1; 
+    background-color: darken(#0cf, 15%);
+
+
+ }
+  .butt:hover {
+    color: #fff;
+ }
+  .button:hover:before {
+    width: 100%;
+ }
+  
